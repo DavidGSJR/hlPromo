@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand-blue: #224A59;
+  --brand-yellow: #F2BC1B;
+}
+
+.brand-hero{background: linear-gradient(180deg, rgba(34,74,89,0.95) 0%, rgba(34,74,89,0.9) 100%);} 
+
+html{scroll-behavior:smooth}
+
+body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+
+.focus-ring:focus{outline:3px solid rgba(242,188,27,0.3);outline-offset:3px}
+
