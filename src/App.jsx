@@ -16,7 +16,7 @@ export default function App(){
         <MapSection />
       </main>
       <Footer />
-      <WhatsAppButton phone="5511999999999" message="Olá! Gostaria de mais informações sobre as promoções." />
+      <WhatsAppButton phone="5561998680050" message="Olá! Gostaria de mais informações sobre as promoções." />
     </div>
   )
 }

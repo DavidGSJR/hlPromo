@@ -133,13 +133,13 @@ const Hero = () => {
                         </div>
 
                         <div className="hidden md:flex md:items-center md:gap-8 lg:gap-10">
-                            <a href="#" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                            <a href="#servicos" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Serviços 
                             </a>
-                            <a href="#" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                            <a href="#promocoes" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Promoções 
                             </a>
-                            <a href="#" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                            <a href="#localizacao" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Localização 
                             </a>
                         </div>
