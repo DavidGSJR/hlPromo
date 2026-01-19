@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const products = [
-  { id: 1, image: "/images/cimento.webp" },
-  { id: 2, image: "/images/tinta.webp" },
-  { id: 3, image: "/images/parafuso.webp" }
+  { id: 1, name: "Chaves Bestfer", image: "src/assets/promocao-chaveBestfer.png" },
+  { id: 2, name: "Selante Pu Water Proof", image: "src/assets/promocao-selantepu.png" },
+
 ];
 
 const WA_PHONE = "5561998680050";
@@ -43,7 +43,7 @@ export default function Products() {
         >
           {products.map((p) => {
             const msg = encodeURIComponent(
-              "Olá, tenho interesse no produto em promoção"
+              `Olá, tenho interesse no produto em promoção: ${p.name}`
             );
             const href = `https://wa.me/${WA_PHONE}?text=${msg}`;
 
@@ -75,14 +75,14 @@ export default function Products() {
 
                   {/* BOTÃO WHATSAPP */}
                   <div
-                    className="
-                      absolute
-                      bottom-20
-                      left-1/2
-                      -translate-x-1/2
-                      z-20
-                    "
-                  >
+                      className="
+                        absolute
+                        bottom-6
+                        left-6
+                        z-20
+                      "
+                    >
+
                     <a
                       href={href}
                       target="_blank"
