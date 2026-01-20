@@ -1,22 +1,35 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import chaveBestfer from "../assets/promocao-chaveBestfer.png";
+import selantePu from "../assets/promocao-selantepu.png";
+import tintaSpray from "../assets/promocao-tintaSpray.png";
+import lampadaElgin from "../assets/promocao-lampadaLedElgin.png";
+import refletorLed from "../assets/promocao-refletorLed.png";
+import duchaFaminho from "../assets/promocao-duchaFaminho.png";
+import assentoKrona from "../assets/promocao-assentoKrona.png";
+import trenaFamastil from "../assets/promocao-trenaFamastil.png";
+import interruptorTramontina from "../assets/promocao-interruptor.png";
+import painelLed from "../assets/promocao-painelLed.png";
+
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const products = [
-  { id: 1, name: "Chaves Bestfer", image: "src/assets/promocao-chaveBestfer.png" },
-  { id: 2, name: "Selante Pu Water Proof", image: "src/assets/promocao-selantepu.png" },
-  { id: 3, name: "Tinta Spray Radcolor uso geral", image: "src/assets/promocao-tintaSpray.png" },{ id: 4, name: "Lampada Led 9W Elgin", image: "src/assets/promocao-lampadaLedElgin.png" },
-  { id: 5, name: "Refletor Led", image: "src/assets/promocao-refletorLed.png" },
-  { id: 6, name: "Ducha Faminho 4T", image: "src/assets/promocao-duchaFaminho.png" },
-  { id: 7, name: "Assento Sanitario Krona", image: "src/assets/promocao-assentoKrona.png" },
-  { id: 8, name: "Trena Emborrachada 5MT Famastil", image: "src/assets/promocao-trenaFamastil.png" },
-  { id: 9, name: "Interruptor Simples Tramontina Aria", image: "src/assets/promocao-interruptor.png" },
-  { id: 10, name: "Painel de Led Imbutir Blumenal", image: "src/assets/promocao-painelLed.png" },
+  { id: 1, name: "Chaves Bestfer", image: chaveBestfer },
+  { id: 2, name: "Selante Pu Water Proof", image: selantePu },
+  { id: 3, name: "Tinta Spray Radcolor uso geral", image: tintaSpray },
+  { id: 4, name: "Lampada Led 9W Elgin", image: lampadaElgin },
+  { id: 5, name: "Refletor Led", image: refletorLed },
+  { id: 6, name: "Ducha Faminho 4T", image: duchaFaminho },
+  { id: 7, name: "Assento Sanitario Krona", image: assentoKrona },
+  { id: 8, name: "Trena Emborrachada 5MT Famastil", image: trenaFamastil },
+  { id: 9, name: "Interruptor Simples Tramontina Aria", image: interruptorTramontina },
+  { id: 10, name: "Painel de Led Imbutir Blumenal", image: painelLed },
 ];
+
 
 const WA_PHONE = "5561998680050";
 
