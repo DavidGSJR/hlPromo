@@ -110,7 +110,6 @@ const Hero = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex flex-shrink-0">
                             <a href="#" title="HL Casa da Construção" className="inline-flex rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-offset-[#224A59] focus:ring-[#F2BC1B] transform transition-transform hover:scale-105">
-                                <img className="w-auto h-24 sm:h-28" src={Logo} alt="Logo HL Casa da Construção" />
                             </a>
                         </div>
 
@@ -132,14 +131,14 @@ const Hero = () => {
                             </button>
                         </div>
 
-                        <div className="hidden md:flex md:items-center md:gap-8 lg:gap-10">
-                            <a href="#servicos" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                        <div className="font-heading hidden md:flex md:items-center md:gap-8 lg:gap-10">
+                            <a href="#servicos" className="text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Serviços 
                             </a>
-                            <a href="#promocoes" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                            <a href="#promocoes" className="text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Promoções 
                             </a>
-                            <a href="#localizacao" className="font-sans text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
+                            <a href="#localizacao" className="text-base font-medium transition-all duration-300 text-white hover:text-[#F2BC1B] transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F2BC1B] rounded px-2 py-1"> 
                                 Localização 
                             </a>
                         </div>
@@ -148,25 +147,25 @@ const Hero = () => {
 
                 {/* Menu Mobile com Glassmorphism */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden mt-4 mx-4 rounded-2xl backdrop-blur-glass border border-white/20 shadow-2xl overflow-hidden">
+                    <div className="font-heading md:hidden mt-4 mx-4 rounded-2xl backdrop-blur-glass border border-white/20 shadow-2xl overflow-hidden">
                         <div className="px-6 py-6 space-y-1">
                             <a 
-                                href="#" 
-                                className="menu-item block font-sans text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
+                                href="#servicos" 
+                                className="menu-item block text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                  Serviços
                             </a>
                             <a 
-                                href="#" 
-                                className="menu-item block font-sans text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
+                                href="#promocoes" 
+                                className="menu-item block text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                  Promoções
                             </a>
                             <a 
-                                href="#" 
-                                className="menu-item block font-sans text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
+                                href="#localizacao" 
+                                className="menu-item block text-base font-medium text-white hover:text-[#F2BC1B] transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/10"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                  Localização
@@ -178,23 +177,32 @@ const Hero = () => {
 
             {/* Imagem de fundo */}
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
                 <img className="object-cover w-full h-full" src={HeroImage} alt="Ferramentas de construção" />
             </div>
 
             <div className="relative h-full z-20">
                 <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl h-full">
                     <div className="max-w-4xl mx-auto text-center h-full flex flex-col justify-center">
-                        <h1 className="tracking-tight text-white animate-fadeInUp">
-                            <span className="font-sans font-bold text-5xl sm:text-6xl lg:text-7xl drop-shadow-lg">HL Casa da</span><br />
-                            <span className="font-sans font-bold text-6xl sm:text-7xl lg:text-8xl text-[#F2BC1B] drop-shadow-2xl">Construção</span>
-                        </h1>
-                        <p className="mt-6 font-sans text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md" style={{animationDelay: '0.2s'}}>
+                        <div className="flex justify-center animate-fadeInUp">
+                            <img
+                                src={Logo}
+                                alt="HL Casa da Construção DF"
+                                className="
+                                w-[260px]
+                                sm:w-[320px]
+                                lg:w-[520px]
+                                drop-shadow-2xl
+                                "
+                            />
+                        </div>
+
+                        <p className="mt-6 text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md" style={{animationDelay: '0.2s'}}>
                             Tudo o que você precisa para construir e reformar em um só lugar. 
                             Qualidade, variedade e os melhores preços para a sua obra.
                         </p>
                         
-                        <div className="flex items-center justify-center mt-12 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
+                        <div className="font-heading flex items-center justify-center mt-12 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
                             <button
                                 onClick={handleWhatsAppClick}
                                 className="
@@ -203,7 +211,6 @@ const Hero = () => {
                                     justify-center
                                     px-8
                                     py-4
-                                    font-sans
                                     text-base
                                     sm:text-lg
                                     font-bold

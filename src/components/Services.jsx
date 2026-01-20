@@ -33,10 +33,10 @@ const Services = () => {
           data-aos="fade-up"
           className="text-center mb-14"
         >
-          <h2 className="text-4xl font-bold text-[#224A59]">
+          <h2 className="font-heading text-4xl font-bold text-[#224A59]">
             O que você encontra aqui
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="font-heading mt-4 text-gray-600 max-w-2xl mx-auto">
             Produtos e serviços completos para sua obra, reforma ou projeto.
           </p>
         </div>

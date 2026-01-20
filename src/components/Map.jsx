@@ -5,18 +5,18 @@ export default function MapSection() {
     <section className="py-20 bg-gray-50" id="localizacao">
       <div className="max-w-6xl mx-auto px-4">
         <h2
-          className="text-2xl font-bold text-center mb-4 text-brandBlue"
+          className="font-heading text-2xl font-bold text-center mb-4 text-brandBlue"
           data-aos="fade-up"
         >
           Onde Estamos
         </h2>
 
         <p
-          className="text-center text-gray-600 mb-10"
+          className="font-heading text-center text-gray-600 mb-10"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Visite a HL Casa da Construção e confira nossas promoções de perto
+          Visite a HL Casa da Construção DF e confira nossas promoções de perto
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -38,8 +38,8 @@ export default function MapSection() {
 
           {/* INFORMAÇÕES */}
           <div data-aos="fade-up" data-aos-delay="150">
-            <h3 className="text-xl font-semibold mb-3 text-gray-800">
-              HL Casa da Construção
+            <h3 className="font-heading text-xl font-semibold mb-3 text-gray-800">
+              HL Casa da Construção DF
             </h3>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
@@ -55,7 +55,7 @@ export default function MapSection() {
               href="https://www.google.com/maps/dir/?api=1&destination=-15.826962,-48.037936"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center bg-brandBlue text-white px-6 py-3 rounded-full font-semibold transition hover:opacity-90"
+              className="font-heading inline-flex items-center justify-center bg-brandBlue text-white px-6 py-3 rounded-full font-semibold transition hover:opacity-90"
             >
               Ver rota no Google Maps
             </a>

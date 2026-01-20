@@ -9,7 +9,13 @@ import "swiper/css/pagination";
 const products = [
   { id: 1, name: "Chaves Bestfer", image: "src/assets/promocao-chaveBestfer.png" },
   { id: 2, name: "Selante Pu Water Proof", image: "src/assets/promocao-selantepu.png" },
-
+  { id: 3, name: "Tinta Spray Radcolor uso geral", image: "src/assets/promocao-tintaSpray.png" },{ id: 4, name: "Lampada Led 9W Elgin", image: "src/assets/promocao-lampadaLedElgin.png" },
+  { id: 5, name: "Refletor Led", image: "src/assets/promocao-refletorLed.png" },
+  { id: 6, name: "Ducha Faminho 4T", image: "src/assets/promocao-duchaFaminho.png" },
+  { id: 7, name: "Assento Sanitario Krona", image: "src/assets/promocao-assentoKrona.png" },
+  { id: 8, name: "Trena Emborrachada 5MT Famastil", image: "src/assets/promocao-trenaFamastil.png" },
+  { id: 9, name: "Interruptor Simples Tramontina Aria", image: "src/assets/promocao-interruptor.png" },
+  { id: 10, name: "Painel de Led Imbutir Blumenal", image: "src/assets/promocao-painelLed.png" },
 ];
 
 const WA_PHONE = "5561998680050";
@@ -18,7 +24,7 @@ export default function Products() {
   return (
     <section className="py-20 relative" id="promocoes">
       <h2
-        className="text-2xl font-bold mb-10 text-center text-brandBlue"
+        className="font-heading text-2xl font-bold mb-10 text-center text-brandBlue"
         data-aos="fade-up"
       >
         Confira nossas promoções imperdíveis!
@@ -34,7 +40,7 @@ export default function Products() {
             el: ".custom-pagination"
           }}
           autoplay={{
-            delay: 4000,
+            delay: 5000,
             disableOnInteraction: false
           }}
           loop
@@ -52,7 +58,8 @@ export default function Products() {
                 <div
                   className="
                     relative
-                    w-full
+                    w-full max-w-5xl mx-auto
+
                     h-[70vh]
                     max-h-[560px]
                     overflow-hidden
@@ -62,20 +69,44 @@ export default function Products() {
                   "
                 >
                   {/* IMAGEM */}
+                  {/* FUNDO BLUR AUTOMÁTICO */}
                   <img
                     src={p.image}
-                    alt="Produto em promoção"
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    aria-hidden
+                    className="
+                      absolute
+                      inset-0
+                      w-full
+                      h-full
+                      object-cover
+                      blur-xl
+                      scale-110
+                    "
                   />
 
-                  {/* OVERLAY */}
-                  <div className="absolute inset-0 bg-black/30" />
+                  {/* OVERLAY ESCURECEDOR */}
+                  <div className="absolute inset-0 bg-black/40" />
+
+                  {/* IMAGEM PRINCIPAL (SEM CORTE) */}
+                  <img
+                    src={p.image}
+                    alt={`Promoção ${p.name}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="
+                      absolute
+                      inset-0
+                      w-full
+                      h-full
+                      object-contain
+                      z-10
+                    "
+                  />
 
                   {/* BOTÃO WHATSAPP */}
                   <div
                       className="
+                        font-heading
                         absolute
                         bottom-6
                         left-6

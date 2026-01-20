@@ -8,8 +8,8 @@ export default function Footer() {
 
           {/* SOBRE */}
           <div data-aos="fade-up">
-            <h4 className="text-lg font-bold text-brandBlue mb-3">
-              HL Casa da Construção
+            <h4 className="font-heading text-lg font-bold text-brandBlue mb-3">
+              HL Casa da Construção DF
             </h4>
             <p className="text-sm text-gray-600 leading-relaxed">
               Tudo para sua obra, reforma e projetos. Materiais, ferramentas
@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* CONTATO */}
           <div data-aos="fade-up" data-aos-delay="100">
-            <h4 className="text-lg font-bold text-brandBlue mb-3">
+            <h4 className="font-heading text-lg font-bold text-brandBlue mb-3">
               Contato
             </h4>
 
@@ -62,7 +62,7 @@ export default function Footer() {
 
           {/* ATENDIMENTO */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <h4 className="text-lg font-bold text-brandBlue mb-3">
+            <h4 className="font-heading text-lg font-bold text-brandBlue mb-3">
               Atendimento
             </h4>
 
@@ -75,6 +75,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className="
+              font-heading
                 inline-flex
                 items-center
                 justify-center
@@ -99,7 +100,7 @@ export default function Footer() {
 
         {/* COPYRIGHT */}
         <div className="mt-12 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} HL Casa da Construção. Todos os direitos reservados.
+          © {new Date().getFullYear()} HL Casa da Construção DF. Todos os direitos reservados.
         </div>
       </div>
     </footer>
