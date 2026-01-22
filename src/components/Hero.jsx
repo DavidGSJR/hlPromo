@@ -189,22 +189,24 @@ const Hero = () => {
                                 src={Logo}
                                 alt="HL Casa da Construção DF"
                                 className="
-                                w-[300px]
-                                sm:w-[380px]
-                                md:w-[480px]
-                                lg:w-[620px]
-                                xl:w-[700px]
-                                drop-shadow-2xl 
+                               block
+                                w-[380px]
+                                min-[650px]:w-[480px]
+                                min-[768px]:w-[580px]
+                                min-[1024px]:w-[620px]
+                                min-[1280px]:w-[650px]
+                                drop-shadow-2xl
                                 "
                             />
                         </div>
 
-                        <p className="mt-4 text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md" style={{animationDelay: '0.2s'}}>
+                        <p className="-mt-2 text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md"
+                        style={{ animationDelay: '0.2s' }}>
                             Tudo o que você precisa para construir e reformar em um só lugar. 
                             Qualidade, variedade e os melhores preços para a sua obra.
                         </p>
                         
-                        <div className="font-heading flex items-center justify-center mt-12 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
+                        <div className="font-heading flex items-center justify-center mt-8 animate-fadeInUp" style={{animationDelay: '0.4s'}}>
                             <button
                                 onClick={handleWhatsAppClick}
                                 className="
