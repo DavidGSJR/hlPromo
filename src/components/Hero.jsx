@@ -199,7 +199,7 @@ const Hero = () => {
                             />
                         </div>
 
-                        <p className="mt-6 text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md" style={{animationDelay: '0.2s'}}>
+                        <p className="mt-4 text-lg sm:text-xl font-normal text-white/90 leading-relaxed max-w-2xl mx-auto animate-fadeInUp drop-shadow-md" style={{animationDelay: '0.2s'}}>
                             Tudo o que você precisa para construir e reformar em um só lugar. 
                             Qualidade, variedade e os melhores preços para a sua obra.
                         </p>
