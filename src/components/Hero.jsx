@@ -194,7 +194,7 @@ const Hero = () => {
                                 min-[650px]:w-[480px]
                                 min-[768px]:w-[580px]
                                 min-[1024px]:w-[620px]
-                                min-[1280px]:w-[650px]
+                                min-[1280px]:w-[675px]
                                 drop-shadow-2xl
                                 "
                             />
