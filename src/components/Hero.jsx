@@ -177,7 +177,7 @@ const Hero = () => {
 
             {/* Imagem de fundo */}
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-black/70 z-10 pointer-events-none"></div>
                 <img className="object-cover w-full h-full" src={HeroImage} alt="Ferramentas de construção" />
             </div>
 
@@ -189,10 +189,12 @@ const Hero = () => {
                                 src={Logo}
                                 alt="HL Casa da Construção DF"
                                 className="
-                                w-[260px]
-                                sm:w-[320px]
-                                lg:w-[520px]
-                                drop-shadow-2xl
+                                w-[300px]
+                                sm:w-[380px]
+                                md:w-[480px]
+                                lg:w-[620px]
+                                xl:w-[700px]
+                                drop-shadow-2xl 
                                 "
                             />
                         </div>
