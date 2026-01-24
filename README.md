@@ -16,7 +16,6 @@ Pontos importantes:
 
 Deploy sugerido: Vercel ou Netlify (build com `npm run build`).
 
-Se quiser que eu rode `npm install` e inicie o servidor dev aqui, autorize e eu executo os comandos no terminal.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
